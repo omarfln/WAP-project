@@ -1,0 +1,33 @@
+body {
+    background-color: #f5f5f5;
+}
+.navbar {
+    background-color: #007BFF;
+    color: #007BFF; /* Text color inside the navbar */
+}
+.navbar-dark .navbar-brand {
+    color: yellowgreen;
+}
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 0px #000000;
+    padding: 20px;
+    margin-top: 20px;
+}
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+}
+.bank-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-align: center;
+}

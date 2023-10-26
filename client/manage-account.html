@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Account - MicroBank</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/manage-account.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #007BFF;">
+        <div class="container">
+            <a class="navbar-brand" href="bank.html" style="color: yellowgreen; font-weight: bold;">CryptoBank</a>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="create-account.html" style="color: yellowgreen; font-weight: bold;">Create Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="show-accounts.html" style="color: yellowgreen; font-weight: bold;">List Accounts</a>
+                </li>
+            </ul>        
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="text-center">Withdraw, Pay, Change Account Type Or Delete Account</h1>
+        <form id="accountActionsForm">
+            <div class="form-group">
+                <label for="withdrawAmount">Withdraw Amount:</label>
+                <input type="number" class="form-control" id="withdrawAmount" name="withdrawAmount" required>
+            </div>
+            <button type="button" id="withdrawButton" class="btn btn-success">Withdraw</button>
+            <div class="form-group" style="margin-bottom: 20px;">
+                <label for="payAmount">Pay Amount:</label>
+                <input type="number" class="form-control" id="payAmount" name="payAmount" required>
+            </div>
+            <button type="button" id="payButton" class="btn btn-success" >Pay</button>
+            <div class="form-group" style="margin-bottom: 20px;" >
+                <label for="changeAccountType">Change Account Type:</label>
+                <select class="form-control" id="changeAccountType" name="changeAccountType">
+                    <option value="savings">Savings</option>
+                    <option value="checking">Checking</option>
+                </select>
+            </div>
+            <button type="button" id="changeAccountTypeButton" class="btn btn-primary">Change Account Type</button>
+            <div class="text-right" style="margin-top: 20px;">
+                <button type="button" id="deleteAccountButton" class="btn btn-danger">Delete Account</button>
+            </div>
+        </form>
+    </div>
+    
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/manage-account.js"></script>
+</body>
+</html>
